@@ -1,17 +1,18 @@
 ﻿
-using DataStructureAndAlgorithm.Recursion;
 
-Recursion rec = new Recursion();
+using DataStructureAndAlgorithm._2._Searching_Algorithm;
+
+Searching search = new Searching();
 
 
-///// Tail Recursion ///
-//rec.TailRecursion(4);
+int[] arr = [12,23, 33, 44, 66, 99];
+int key = 98;
 
-///// Head Recursion ///
-//rec.HeadRecursion(4);
+//var index = search.Linersearch(arr, key);
 
-////TreeRecursion
-//rec.TreeRecursion(3);
+//var index = search.BinarySearch(arr, key);
 
-//Factorial
-Console.WriteLine(rec.Factorial(5));
+var index = search.RecursiveBinarySearch(arr, key, 0, arr.Length - 1);
+
+Console.WriteLine(index);
+Console.ReadKey();
