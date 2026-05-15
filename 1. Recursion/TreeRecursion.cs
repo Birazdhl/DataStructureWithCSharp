@@ -37,14 +37,20 @@ namespace DataStructureAndAlgorithm.Recursion
             }
         }
 
-        //Factorial
+        ////Factorial
+        //public int SumOfNumber(int n)
+        //{
+        //    return n + SumOfNumber(n - 1);
+        //}
+
+        //Sum of N Number
         public int Factorial(int n)
         {
-            if (n == 1)
+            if (n == 0)
             {
                 return 1;
             }
-            return n + Factorial(n - 1);
+            return n * Factorial(n - 1);
         }
     }
 }
